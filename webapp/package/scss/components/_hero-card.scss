@@ -1,0 +1,21 @@
+.hero {
+    width: 100%;
+    float: left;
+    height: 914px;
+    background-position: center center;
+    background-size: cover;  
+    display: flex; 
+    align-items: center;
+    margin-top: -1px;
+
+    @include screen(0, $media-mobile-large) {
+        height: 508px;
+    }
+
+    &__content {
+        width: 748px;
+        max-width: 748px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}

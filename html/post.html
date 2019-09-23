@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Posts-News</title>
+    
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+
+<div class="wrapper__content">
+
+    <header class="newheader">
+        <div class="wrapper__inner">
+            <a href="index.html" class="newheader__branding">
+                <img src="../css/images/BaxterStorey_Logo.svg" alt="BaxterStorey">
+            </a>
+
+            <div class="primary-nav">
+    
+                <div class="primary-nav__mobile">
+                    <a href="#"><span></span></a>
+                </div>
+    
+                <nav class="primary-nav__list">
+                    <ul class="menu-primary">
+                        <li><a href="#">What we do</a></li>
+                        <li><a href="#">Who we are</a></li>
+                        <li><a href="#">Working with ys</a></li>
+                        <li><a href="#">News and blog</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                    
+                    <ul class="menu-secondary">
+                        <li>
+                            <form action="http://localhost:8888/baxterstorey" method="POST">
+                                <select name="region" onchange="this.form.submit()">
+                                    <option value='EN'  selected>England</option>
+                                    <option value='SC' >Scotland</option>
+                                    <option value='IE' >Ireland</option>
+                                    <option value='FR' >France</option>
+                                    <option value='BE' >Belgium</option>
+                                    <option value='NL' >Netherlands</option>
+                                </select>
+                            </form>
+                        </li>
+
+                        <!-- <li><a href="#">EN</a> / <a href="#">FR</a> / <a href="#">NL</a></li> 
+
+                        <li><a href="#">Join our family</a></li> -->
+                    </ul>
+                </nav>
+    
+            </div>
+
+
+        </div>
+    </header>
+
+    <!-- <section class="hero" style="background-image: url('../css/images/hero-card.png');">
+        <div class="hero__content">
+            <h2>An independent hospitality provider</h2>
+            <a href="#">Find out more</a>
+        </div>
+    </section> -->
+        
+    <section class="post">
+        <div class="wrapper__inner">
+
+            <aside>
+                <div class="aside__ingredients">
+                    <h3>Ingredients</h3>
+                    <ul>
+                        <li>- 7 semi-dried figs, cut in half</li>
+                        <li>- 200g unsalted butter</li>
+                        <li>- 200g demerara sugar</li>
+                        <li>- 7g salt</li>
+                        <li>- 3 whole eggs</li>
+                        <li>- 5g vanilla extract</li>
+                        <li>- 200g almonds</li>
+                        <li>- 100g polenta</li>
+                    </ul>
+                </div>
+
+                <div class="aside__latest">
+                    <h3>Latest News and Blog</h3>
+                    <ul>
+                        <li>Mulled Wine Poached Pears, Vanilla Mascarpone</li>
+                        <li>Caribbean Inspired Jerk Pork Belly With Coconut-Infused Sweet Potato Dauphinoise</li>
+                        <li>Coffee Talent Honoured At BaxterStorey Awards</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <article class="post__content">
+                <h2>Lorem Ipsum</h2>
+                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                <figure>	
+                    <img src="http://via.placeholder.com/747x474" alt="" />
+                    <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</figcaption>
+                </figure>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            </article>
+
+            
+            
+
+        </div>
+    </section>
+    
+
+</div>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>

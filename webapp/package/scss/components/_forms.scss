@@ -1,0 +1,179 @@
+.contact-form {
+    width: 100%;
+    float: left;
+    margin: 50px 0 0 0;
+    padding-top: 70px;
+    box-sizing: border-box;
+    background: rgba($color: #919388, $alpha: 0.15);
+
+    @include screen(0, $media-mobile-large) {
+        padding-top: 30px;
+        margin: 25px 0 0 0;
+    }
+
+    .wrapper__inner {
+        max-width: 740px;
+    }
+
+    .btn__submit {
+        @include btn-sumbit-14-15;
+        color: $HeroChartreuse;
+        border-radius: 10px;
+        border: 1px solid $HeroChartreuse;
+        background: transparent;
+        width: 95px;
+        height: 40px;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        //@include transition (all 0.2s ease-out);
+        display: block;
+        margin: 0 auto;
+
+        &:hover {
+            background: $HeroChartreuse;
+            color: $White;   
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        @include screen(0, $media-mobile-large){
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+
+    .field-block {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        @include screen(0, $media-mobile-large){
+            flex-direction: column;
+        }
+
+        .field {
+            lost-waffle: 1/2 flex;
+            position: relative;
+            margin-top: 8px;
+
+            @include screen(0, $media-mobile-large){
+                lost-waffle: 1 flex;
+            }
+
+            &-sml {
+                lost-column:1/1 flex;
+                margin-bottom: 25px;
+            }
+
+            &-full {
+                lost-column:1 flex;
+                margin-bottom: 40px;
+                margin-top: 8px;
+                position: relative;
+
+                @include screen(0, $media-mobile-large){
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .field, .field-sml, .field-full {
+            &.error-field {
+                label {
+                    color: $DarkRed;
+
+                    &:last-child {
+                        display: block;
+                    }
+                }
+
+                input[type=text], input[type=email], input[type=tel], input[type=number], textarea {
+                    border: 1px solid $DarkRed;
+                    background-image:url('images/input-error.svg'); 
+                    background-repeat: no-repeat;
+                    background-position: 98%;
+                }
+            }
+        }
+    }
+}
+
+form {
+
+    h2 {
+        padding: 0 0 40px 0;
+
+        @include screen(0, $media-mobile-large){
+            padding: 0 0 20px 0;
+        }
+    }
+
+    label {
+        display: block;
+        @include form-label-14-15;
+        color: $Grey;
+        padding: 0 0 8px 0;
+
+        &.error-message {
+            display: none;
+            position: absolute;
+            left: 0;
+            bottom: -29px;
+            color: $DarkRed;
+            @include error-label-12-19;
+        }
+    }
+
+    input[type=text], input[type=email], input[type=tel], input[type=number], textarea {
+        width: 100%;
+        box-sizing: border-box;
+        @include input-16-16;
+        padding: 14px 0 14px 14px;
+        color: $Grey; 
+        outline: 0;
+        border: 1px solid $NeutralGrey-10;
+        border-radius: 3px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+
+        &:focus {
+            border: 1px solid $HeroChartreuse;
+            outline:none;
+            color: $HeroChartreuse;
+        }
+    }
+
+    textarea {
+        @include textarea-16-26;
+        height: 240px;
+        resize: none;
+    }
+
+    select {
+        width:72px;
+        @include select-12-12;
+        padding: 9px 0 9px 10px;
+        color: $Grey; 
+        -webkit-appearance: none;
+        -webkit-box-shadow: none;
+        -moz-appearance: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        outline: 0;
+        border: 1px solid $NeutralGrey-10;
+        border-radius: 3px;
+        background-image:url('images/select.svg'); 
+        background-repeat: no-repeat;
+        background-position: 85%;
+        background-color: $White;
+
+        &:focus {
+            outline:none;
+            border: 1px solid $HeroChartreuse;
+        }
+    }
+}

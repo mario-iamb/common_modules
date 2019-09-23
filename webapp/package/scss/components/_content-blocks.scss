@@ -1,0 +1,180 @@
+.hero {
+    width: 100%;
+    float: left;
+    margin: 0 0 50px 0;
+
+
+    &__inner {
+        max-width: 1128px;
+        padding: 0 50px;
+        height: 100%;
+        display: flex;
+        align-items:center;
+        margin:0 auto;
+
+        @include screen(0, $media-desktop) {
+            padding: 0 25px;
+        }
+
+        @include screen(0, $media-mobile-large) {
+            padding: 0 15px;
+        }
+
+        &-content {
+            max-width: 430px;
+
+            .hero-image--large & {
+                lost-offset:1/12 0 0px;
+
+                @include screen(0, $media-mobile-large){
+                    lost-offset:none;
+                }
+            }
+
+            h1 {
+                color: $YellowOrange;
+                @include hero-large-40-44;
+                padding-bottom: 15px;
+            }
+
+            p {
+                color: $White;
+                @include hero-large-p-30-34;
+            }
+
+            .hero-image--small & {
+
+                h1 {
+                    @include hero-small-40-42;
+                    padding-bottom: 0;
+                }
+                p {
+                    @include hero-small-p-40-42;
+                }
+            }
+        }
+    }
+
+    &__background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: block;
+        z-index: -1;
+    }
+
+    &__background-image {
+        background-position: center center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        .hero-image--large & {
+            &--mobile {
+                height: 376px;
+                display: none;
+    
+                @include screen(0, $media-mobile-large) {
+                    display: block;
+                    background-position: right center;
+                }
+            }
+    
+            &--desktop {
+                height: 400px;
+                display: block;
+
+                @include screen(0, $media-tablet){
+                    background-position: 70% center;
+                }
+    
+                @include screen(0, $media-mobile-large) {
+                    display: none;
+                }
+            }
+        }
+
+        .hero-image--small & {
+            &--mobile {
+                height: 250px;
+                display: none;
+
+                @include screen(0, $media-mobile-large) {
+                    display: block;
+                    background-position: right center;
+                }
+            }
+    
+            &--desktop {
+                height: 275px;
+                display: block;
+
+                @include screen(0, $media-tablet){
+                    background-position: 70% center;
+                }
+    
+                @include screen(0, $media-mobile-large) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &-image {
+
+        &--large {
+            height:400px;   
+            position: relative;
+
+            @include screen(0, $media-mobile-large){
+                height:376px;
+            }
+        }
+
+        &--small {
+            height:270px;
+            position: relative;
+
+            @include screen(0, $media-mobile-large){
+                height:250px;
+            }
+        }
+    }
+
+
+    &-noimage {
+        height: 80px;
+
+        @include screen(0, $media-mobile-large){
+            display: none;
+        }
+
+        h1 {
+            @include content-generic-title;
+            color: $White;
+        }
+
+        a {
+            color: $White;
+        }
+
+        &__green {
+            background: linear-gradient(90deg, rgba(156,218,122,1) 0%, rgba(131,208,127,1) 40%, rgba(84,190,137,1) 100%);   
+        }
+
+        &__cayan {
+            background: linear-gradient(90deg, rgba(125,210,198,1) 0%, rgba(125,210,198,1) 40%, rgba(78,158,161,1) 100%);
+        }
+    }
+}
+
+.dummy-block {
+    width: 100%;
+    float: left;
+    height: 700px;
+}

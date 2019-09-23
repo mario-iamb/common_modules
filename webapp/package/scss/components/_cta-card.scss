@@ -1,0 +1,27 @@
+.cta-card {
+    width: 100%;
+    float: left;
+    margin: 0 0 50px 0;
+
+    .wrapper__inner {
+        max-width: 552px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 24px;
+        padding: 0 0 30px 0;
+    }
+
+    a {
+        font-family: 'Museo100-Regular';
+        font-size: 12px;
+        background: #656565;
+        color: white;
+        text-transform: uppercase;
+        padding: 10px 20px;
+
+    }
+    
+    
+}

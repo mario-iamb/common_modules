@@ -1,0 +1,174 @@
+.layout-blog {
+    width: 100%;
+    float: left;
+    margin: 50px 0;
+
+    .wrapper__inner {
+        display: flex;
+        
+        @include screen(0, $media-mobile-large){
+            flex-direction: column;
+        }
+    }
+
+    &__social {
+        lost-column:2/12 flex;
+        //border: 1px solid pink;
+        box-sizing: border-box;
+        order: 1;
+
+        @include screen(0, $media-mobile-large){
+            lost-column:1;
+            order:2;
+        }
+
+        &--title {
+            @include share-title-16-26;
+            color: $NeutralGrey-1;
+            padding-bottom:20px;
+        }
+
+        ul {
+            li {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+
+
+    &__primary {
+        lost-column:7/12 flex;
+        height: 200px;
+        box-sizing: border-box;
+        border: 1px solid red;
+        order: 2;
+
+        @include screen(0, $media-mobile-large){
+            lost-column:1;
+            order:3;
+        }
+    }
+
+    &__secondary {
+        lost-column:3/12 flex;
+        //height: 200px;
+        //box-sizing: border-box;
+        //border: 1px solid green;
+        order: 3;
+
+        @include screen(0, $media-mobile-large){
+            lost-column:1;
+            order: 1;
+        }
+
+        .support {
+            width: 100%;
+            float: left;
+            margin: 0 0 50px 0;
+
+            img {
+                width: 73px;
+                height: 73px;
+                margin-bottom: 5px;
+            }
+
+            p {
+                @include find-out-14-17;
+                color: $Grey;
+
+                &.support__title {
+                    @include tags-title-16-26;
+                    color: $NeutralGrey-1;
+                    padding-bottom:10px;
+                }
+            }
+
+            a {
+                @include main-heavy;
+                color: $Cyan;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .tags {
+            width: 100%;
+            float: left;
+            margin: 0 0 25px 0;
+
+            &__title {
+                @include tags-title-16-26;
+                color: $NeutralGrey-1;
+                padding-bottom:10px;
+            }
+
+            ul {
+                > li {
+                    display: inline-block;
+                    @include tags-12-14;
+                    color: $Grey;
+                    padding: 6px 10px;
+                    border: 1px solid rgba($color: #979797, $alpha: 0.3);
+                    margin: 0 10px 10px 0;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        .downloads {
+            width: 100%;
+            float: left;
+            margin: 0 0 25px 0;
+
+            &__title {
+                @include tags-title-16-26;
+                color: $NeutralGrey-1;
+                padding-bottom:15px; 
+            }
+
+            ul {
+
+                > li {
+                    width: 100%;
+                    display: block;
+                    position: relative;
+                    margin-bottom: 25px;
+
+                    
+                    
+                    a {
+                        @include downloads-12-14;
+                        color: $Grey;
+                        display: block;
+                        padding-left: 40px;
+                        position: relative;
+
+                        &:before {
+                            content: url('images/Download-icon.svg');
+                            position: absolute;
+                            width: 29px;
+                            height: 36px;
+                            top: -5px;
+                            left: 0;
+                        }
+
+                        &:hover {
+                            text-decoration: underline;
+                            color: $Cyan;
+
+                            &:before {
+                                content: url('images/Download-icon-hover.svg');
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+
+        
+    }
+}

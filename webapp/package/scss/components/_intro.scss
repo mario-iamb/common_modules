@@ -1,0 +1,20 @@
+.intro {
+    width: 100%;
+    float: left;
+    background: #F6F6F6;
+
+    .wrapper__inner {
+        display: flex;
+        flex-direction: row;
+        margin: 100px auto;
+        //background: lightcyan;
+    }
+
+    &-content {
+        max-width: 652px;
+    }
+
+    &-nav {
+        margin-left: auto;
+    }
+}

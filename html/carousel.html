@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
+    
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/tiny-slider.css">
+
+
+</head>
+<body>
+
+
+<div class="wrapper__content">
+
+    <!-- <header class="header">
+        <div class="wrapper__inner">
+    
+            <a href="index.html" class="header__branding">
+                <img src="../css/images/thorogood_bw_logo.png" alt="Thorogood">
+            </a>
+    
+            <div class="primary-nav">
+    
+                <div class="primary-nav__mobile">
+                    <a href="#"><span></span></a>
+                </div>
+    
+                <nav class="primary-nav__list">
+                    <ul>
+                        <li class="menu-item-has-children">
+                            <a href="blog.html">About us</a>
+                            <ul>
+                                <li><a href="blog.html">History</a></li>
+                                <li><a href="#">Values</a></li>
+                                <li><a href="#">People</a></li>
+                                <li><a href="#">Responsible sourcing</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#">Services</a>
+                            <ul>
+                                <li><a href="#">Advanced Analytics</a></li>
+                                <li><a href="#">Defining</a></li>
+                                <li><a href="#">Delivering</a></li>
+                                <li><a href="#">Supporting</a></li>
+                                <li><a href="#">Planing &amp; Modeling</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#">Technology</a>
+                            <ul>
+                                <li><a href="#">Anaplan</a></li>
+                                <li><a href="#">Amazon Web Services</a></li>
+                                <li><a href="#">IBM</a></li>
+                                <li><a href="#">Microsoft</a></li>
+                                <li><a href="#">Qlik</a></li>
+                                <li><a href="#">SAP</a></li>
+                                <li><a href="#">Tableu</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Perspecives</a></li>
+                        <li><a href="#">Joins Us</a></li>
+                        <li><a href="blog.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+    
+            </div>
+        </div>
+    </header> -->
+
+    <header class="newheader">
+        <div class="wrapper__inner">
+            <a href="index.html" class="newheader__branding">
+                <!--<img src="../css/images/BaxterStorey_Logo.svg" alt="BaxterStorey">-->
+            </a>
+
+            <div class="primary-nav">
+    
+                <div class="primary-nav__mobile">
+                    <a href="#"><span></span></a>
+                </div>
+    
+                <nav class="primary-nav__list">
+                    <ul class="menu-primary">
+                        <li><a href="#">What we do</a></li>
+                        <li><a href="#">Who we are</a></li>
+                        <li><a href="#">Working with ys</a></li>
+                        <li><a href="#">News and blog</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                    
+                    <ul class="menu-secondary">
+                        <li>
+                            <form action="http://localhost:8888/baxterstorey" method="POST">
+                                <select name="region" onchange="this.form.submit()">
+                                    <option value='EN'  selected>England</option>
+                                    <option value='SC' >Scotland</option>
+                                    <option value='IE' >Ireland</option>
+                                    <option value='FR' >France</option>
+                                    <option value='BE' >Belgium</option>
+                                    <option value='NL' >Netherlands</option>
+                                </select>
+                            </form>
+                        </li>
+
+                        <!-- <li><a href="#">EN</a> / <a href="#">FR</a> / <a href="#">NL</a></li> 
+
+                        <li><a href="#">Join our family</a></li> -->
+                    </ul>
+                </nav>
+    
+            </div>
+
+
+        </div>
+    </header>
+
+    <!--
+    <section class="hero" style="background-image: url('../css/images/hero-card.png');">
+        <div class="hero__content">
+            <h2>An independent hospitality provider</h2>
+            <a href="#">Find out more</a>
+        </div>
+    </section> 
+    
+    <p>&nbsp;</p>
+    
+    <section class="carousel">
+        <div class="carousel__card">
+            <div class="carousel__card-media">
+                <div>
+                    <img src="http://via.placeholder.com/700x400?text=First">
+                </div>
+                <div>
+                    <img src="http://via.placeholder.com/700x400?text=Second">
+                </div>
+                <div>
+                    <img src="http://via.placeholder.com/700x400?text=Third">
+                </div>
+            </div>
+
+            <div class="carousel__card-copy">
+                <div class="copy-holder">
+                    <h2>Title</h2>
+                    <h3>Subtitle</h3>
+                    <p>ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus lobortis dui at viverra. Proin sed ligula eu odio cursus facilisis eget non magna. Morbi ac consectetur magna. Nullam in rutrum odio. Pellentesque hendrerit tortor eu purus consectetur, ut imperdiet urna pellentesque. Morbi condimentum dignissim ullamcorper. Praesent vitae ornare erat, vitae pellentesque orci.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel__card">
+            <div class="carousel__card-media">
+                <div>
+                    <img src="http://via.placeholder.com/700x400?text=First">
+                </div>
+                <div>
+                    <img src="http://via.placeholder.com/700x400?text=Second">
+                </div>
+                <div>
+                    <img src="http://via.placeholder.com/700x400?text=Third">
+                </div>
+            </div>
+
+            <div class="carousel__card-copy">
+                <div class="copy-holder">
+                    <h2>Title</h2>
+                    <h3>Subtitle</h3>
+                    <p>ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus lobortis dui at viverra. Proin sed ligula eu odio cursus facilisis eget non magna. Morbi ac consectetur magna. Nullam in rutrum odio. Pellentesque hendrerit tortor eu purus consectetur, ut imperdiet urna pellentesque. Morbi condimentum dignissim ullamcorper. Praesent vitae ornare erat, vitae pellentesque orci.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel__card">
+            <div class="carousel__card-media">
+                <div>
+                    <img src="http://via.placeholder.com/700x400?text=First">
+                </div>
+                <div>
+                    <img src="http://via.placeholder.com/700x400?text=Second">
+                </div>
+                <div>
+                    <img src="http://via.placeholder.com/700x400?text=Third">
+                </div>
+            </div>
+
+            <div class="carousel__card-copy">
+                <div class="copy-holder">
+                    <h2>Title</h2>
+                    <h3>Subtitle</h3>
+                    <p>ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus lobortis dui at viverra. Proin sed ligula eu odio cursus facilisis eget non magna. Morbi ac consectetur magna. Nullam in rutrum odio. Pellentesque hendrerit tortor eu purus consectetur, ut imperdiet urna pellentesque. Morbi condimentum dignissim ullamcorper. Praesent vitae ornare erat, vitae pellentesque orci.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <p>&nbsp;</p>
+
+    <section class="tags">
+        <div class="wrapper__inner">
+            <p class="tags__title">Links</p>
+            <ul>
+                <li><a id="button_one" href="#">One</a></li>
+                <li><a id="button_two" href="#">Two</a></li>
+                <li><a id="button_three" href="#">Three</a></li>
+                <li><a id="button_four" href="#">Four</a></li>
+                <li><a id="button_five" href="#">Five</a></li>
+            </ul>
+        </div>
+    </section>
+
+    -->
+
+    <p>&nbsp;</p>
+
+    <!--<section class="visits">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-4 pl-0">
+                    <div class="extra-one">1</div>
+                </div>
+                <div class="col-12 col-md-8 pr-0">
+                    <div class="extra-one">2</div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+
+   
+
+
+    <section class="visits">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="tabs">
+
+                        <input name="tabs-1" type="radio" id="tab-1" class="input" checked>
+                        <label for="tab-1" class="label">Location</label>
+                        <div class="panel">
+                            <p>TAB1 The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae</p>
+                            <p>The fruit of the Citrus × sinensis is considered a sweet orange, whereas the fruit of the Citrus × aurantium is considered a bitter orange. The sweet orange reproduces asexually (apomixis through nucellar embryony); varieties of sweet orange arise through mutations.</p>
+                        </div>
+
+                        <input name="tabs-1" type="radio" id="tab-2" class="input">
+                        <label for="tab-2" class="label">Accessibility</label>
+                        <div class="panel">
+                            <p>We aim to provide a friendly, accessible environment for all our visitors and the widest possible access to our buildings. While Step free access is available to the estate along with all of the Inn’s collegiate buildings. Many of the chambers can only be accessed via staircases, so persons visiting individuals in chambers are advised to contact the chambers directly.</p>
+                            <p>The Inn does operate a stair climber to assist access arrangements for its use should be made prior to arrival with the Chief Porters office. They will also be able to arrange, if notified in advance, parking close to their premises.</p>
+                        </div>
+
+                        <input name="tabs-1" type="radio" id="tab-3" class="input">
+                        <label for="tab-3" class="label">Parking</label>
+                        <div class="panel">
+                            <p>Being a private gated estate the Inn is able to offer secure and safe parking for members and clients. This is with 24 hour security staff and extensive CCTV coverage. Please note: Parking within the Inn on evenings, weekends and Bank Holidays is only permitted for residents and permits holders.</p>
+                            <p>Those visiting Lincoln’s Inn on weekdays for any other purpose will be charged for doing so. The current rate is £5 per hour or part thereof, which is payable at the main gate on departure. The daily rate is currently £20 per day for registered barristers, residents and tenants. For all other persons the charge is £5 per hour up to a maximum of £40 per day charge.</p>
+                            <p>Please inform the Chief Porters office at least 24hrs prior should you be attending an event and wish or need to drive to the Inn. Taxis and private cars are not charged for dropping passengers off; there is a 15 minute, no charge rule for this purpose.</p>
+                            <p>Members, tenants and residents of the Inn are entitled to purchase annual permits for parking in the Inn. Any enquiries and applications for permits should be made to the Chief Porter or Deputy Chief Porter, who will provide information on current rates. We accept all methods of payment except American Express.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-8">
+                    <div class="extra-one">
+                        <img src="../css/images/visit-map.png">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact-details">
+        <div class="container-fluid">
+            <div class="row justify-content-md-start">
+                <div class="col-12 col-md-3">
+                    <h2>Contact Details</h2>
+                </div>
+                <div class="col-12 col-md-3 contact">
+                    <h3>Chef porter</h3>
+                    <p>Nicholas Bracey</p>
+                    <p>email@email.com</p>
+                    <p>020 7963 5108</p>
+                </div>
+                <div class="col-12 col-md-3 contact">
+                    <h3>Deputy Chief Porter</h3>
+                    <p>Ben Wighton</p>
+                    <p>ben@email.com</p>
+                    <p>020 7693 5179</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="tours">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <div class="tabs">
+                    
+                        <input name="tabs-2" type="radio" id="tab-10" class="input" checked>
+                        <label for="tab-10" class="label">Weekly tours</label>
+                        <div class="panel">
+                            <p>Visitors are welcome to walk around the precincts of the Inn, which are open Monday to Friday 7am to 7pm. The Inn’s buildings, however, are only open for organised tours, except for the Chapel which is open Monday to Friday 9am to 5pm.</p>
+                            <p>You can join a one-hour Tour of the Inn every Tuesday at 10.30m. Meet our expert Blue Badge guide in the Undercroft (underneath the Chapel). The cost for the Tour is £10.00, and it is open to members of the public. You can also add a cream-tea or lunch in the Members Common Room.</p>
+                        </div>
+
+                        <input name="tabs-2" type="radio" id="tab-11" class="input">
+                        <label for="tab-11" class="label">Group tours</label>
+                        <div class="panel">
+                            <p>We also offer on request and subject to availability, week-day historic tours of Inn. Minimum group size: 5, please allow for at least one month notice. Contact mail@lincolnsinn.org.uk for further information and cost.</p>
+                            <p>Prospective members and University Groups who are interested in having a tour of the Inn please contact our Outreach Coordinator at Andrew.smith@lincolnsinn.org.uk.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-7">
+                    <div class="extra-one">
+                        <img src="../css/images/tours-img.png">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+
+    <p>&nbsp;</p>
+
+
+    <section class="space-layouts">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-4 space-layouts__info">
+                    
+                    <div class="space-layouts__nav">
+                        <span class="space-layouts__nav-subtitle">Your event in</span>
+                        <strong class="space-layouts__nav-title">The Old Hall</strong>
+                        <ul class="space-layouts__nav-list">
+                            <li class="space-layouts__nav-item"><a class="space-layouts__nav-link active" href="#tab-15">Example Layouts</a></li>
+                            <li class="space-layouts__nav-item"><a class="space-layouts__nav-link" href="#tab-20">Dinner top table and springs</a></li>
+                            <li class="space-layouts__nav-item"><a class="space-layouts__nav-link" href="#tab-30">Theatre style - Facing east wall</a></li>
+                            <li class="space-layouts__nav-item"><a class="space-layouts__nav-link" href="#tab-40">Lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="table--dimensions">
+                        <span class="table__title">Dimensions</span>
+                        <table class="table">
+                            <tr class="table__row">
+                                <td class="table__cell">Length <strong>36.58m</strong></td>
+                                <td class="table__cell">Width <strong>13.72m</strong></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="col-8 space-layouts__content">
+                    <div id="tab-15" class="tab-pane active">
+                        <img src="../css/images/hero_floor_map.jpg" alt="">
+                    </div>
+                    <div id="tab-20" class="tab-pane">
+                        <img src="../css/images/floor_map.jpg" alt="">
+
+                        <div class="table--capacity">
+                            <table>
+                                <tr>
+                                    <td>Capacity</td>
+                                    <td>Description</td>
+                                </tr>
+                                <tr>
+                                    <td class="table__cell">96</td>
+                                    <td class="table__cell"><strong>Top Table</strong> – double sided x42 including 2 gunners<br>6 Sprigs – 9 guests each</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+                    <div id="tab-30" class="tab-pane">
+                        <img src="../css/images/floor_map_2b.jpg" alt="">
+                        <div class="table--capacity">
+                            <table>
+                                <tr>
+                                    <td>Capacity</td>
+                                    <td>Description</td>
+                                </tr>
+                                <tr>
+                                    <td class="table__cell">196</td>
+                                    <td class="table__cell"><strong>Top Table</strong> – double sided x42 including 2 gunners<br>6 Sprigs – 9 guests each</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="tab-40" class="tab-pane">
+                        <img src="../css/images/floor_map_2c.jpg" alt="">
+                        <div class="table--capacity">
+                            <table>
+                                <tr>
+                                    <td>Capacity</td>
+                                    <td>Description</td>
+                                </tr>
+                                <tr>
+                                    <td class="table__cell">96</td>
+                                    <td class="table__cell"><strong>Top Table</strong> – double sided x42 including 2 gunners<br>6 Sprigs – 9 guests each</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>   
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <p>&nbsp;</p>
+
+    <section class="my-test">
+        <div class="container-fluid">
+            
+            <div class="row">
+                <div class="col-8">
+                    <p>New carousel placeholder</p>
+                    <div class="my-slider">
+                        <div>
+                            <img src="../css/images/1.jpg" alt="">
+                            <p>1228: Charter of Henry III - one of the earliest documents in the Inn’s possession, this charter recorded the gift of the site of the future Inn to Ralph Neville, Bishop of Chichester.</p>
+                        </div>
+                        <div>
+                            <img src="../css/images/2.jpg" alt="">
+                            <p>1422: First surviving copies of the Black Books - the Black Books, containing accounts and the Minutes of Council are the earliest surviving documents from any of the Inns of Court, proving that Lincoln’s Inn was in existence before this date.</p>
+                        </div>
+                        <div>
+                            <img src="../css/images/3.jpg" alt="">
+                            <p>1496: Thomas More admitted as a member of Lincoln’s Inn - More was made a Bencher in about 1508 before being made Autumn Reader in 1510. In a glittering legal career, More was Lord Chancellor between October 1529 – May 1532. Executed for his refusal to acknowledge Henry VIII as Head of the Church in England, More was canonised by the Roman Catholic Church in 1928.</p>
+                        </div>
+                        <div>
+                            <img src="../css/images/4.jpg" alt="">
+                            <p>1592: John Donne joined the Inn as a student in 1592, but left without being called to the Bar. Later in life, as an ordained Anglican priest he returned to the Inn as Reader in Divinity (Preacher). He was appointed Dean of St Paul’s in 1621.</p>
+                        </div>
+                        <div>
+                            <img src="../css/images/5.jpg" alt="">
+                            <p>1619-23: Construction of the present Chapel - in a Bible given to the Inn when he left to become Dean of St Paul’s, John Donne records laying the foundation stone of the new Chapel with his own hands. The interior is remarkable for the survival of its fine seventeenth century furnishings, including benches, pews and painted glass.</p>
+                        </div>
+                        <div>
+                            <img src="../css/images/6.jpg" alt="">
+                            <p>1690-3: New Square - Henry Serle, a member of the Inn, reached an agreement with the Inn in 1682 to build a range of buildings on what is now New Square. A series of boundary disputes were unresolved by Serle’s death in 1690 and the development was overseen by Nicholas Barbon. Originally called Serle Court, it rapidly became known as New Square.</p>
+                        </div>
+                        <div>
+                            <img src="../css/images/7.jpg" alt="">
+                            <p>1845: Great Hall and Library - the Great Hall and the Library, built to the designs of Philip Hardwick were opened by Queen Victoria and Prince Albert.</p>
+                        </div>
+                        <div>
+                            <img src="../css/images/8.jpg" alt="">
+                            <p>1851: Bleak House - publication of Bleak House by Charles Dickens. A satire on the costs and delays of Chancery litigation, the novel opens with a famous description of the Lord Chancellor’s Court sitting in the Old Hall of Lincoln’s Inn</p>
+                        </div>
+                        <div>
+                            <img src="../css/images/9.jpg" alt="">
+                            <p>1922: Cornelia Sorabji - the first woman to sit the Bachelor of Civil Laws exam at Oxford University and the first woman to practise law in both India and Britain was admitted to Lincoln’s Inn on 1 May 1922.</p>
+                        </div>
+                        <div>
+                            <img src="../css/images/10.jpg" alt="">
+                            <p>1923: Mercy Ashworth and Mithan Tata - the first women members of Lincoln’s Inn to be called to the Bar – on 26 January 1923.</p>
+                        </div>
+                        <div>
+                            <img src="../css/images/11.jpg" alt="">
+                            <p>1928: Old Hall restoration - a major restoration of the Old Hall took place, which resulted in the rediscovery of the original timber roof, long hidden behind an eighteenth century plaster ceiling.</p>
+                        </div>
+                        <div>
+                            <img src="../css/images/12.jpg" alt="">
+                            <p>1941: War damage - Lincoln’s Inn sustained much less damage in World War 2 than the other Inns of Court, but Stone Buildings sustained major damage in a raid on 10 May 1941.</p>
+                        </div>
+                        <div>
+                            <img src="../css/images/13.jpg" alt="">
+                            <p>1964: Lord Denning, admitted to Lincoln’s Inn in 1923, was elected Treasurer for the year 1964. In addition to his judgments in many leading cases, Lord Denning’s report on the Profumo Affair made him the best known judge in the country and his report become an improbable best-seller.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-8">
+                    <div class="my-slider">
+                        <div>
+                            <img src="../css/images/1.jpg" alt="">
+                            <p>1228: Charter of Henry III - one of the earliest documents in the Inn’s possession, this charter recorded the gift of the site of the future Inn to Ralph Neville, Bishop of Chichester.</p>
+                        </div>
+                        <div>
+                            <img src="../css/images/2.jpg" alt="">
+                            <p>1422: First surviving copies of the Black Books - the Black Books, containing accounts and the Minutes of Council are the earliest surviving documents from any of the Inns of Court, proving that Lincoln’s Inn was in existence before this date.</p>
+                        </div>
+                        <div>
+                            <img src="../css/images/3.jpg" alt="">
+                            <p>1496: Thomas More admitted as a member of Lincoln’s Inn - More was made a Bencher in about 1508 before being made Autumn Reader in 1510. In a glittering legal career, More was Lord Chancellor between October 1529 – May 1532. Executed for his refusal to acknowledge Henry VIII as Head of the Church in England, More was canonised by the Roman Catholic Church in 1928.</p>
+                        </div>
+                        <div>
+                            <img src="../css/images/4.jpg" alt="">
+                            <p>1592: John Donne joined the Inn as a student in 1592, but left without being called to the Bar. Later in life, as an ordained Anglican priest he returned to the Inn as Reader in Divinity (Preacher). He was appointed Dean of St Paul’s in 1621.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!--<section class="sliderOne">
+        <div class="sliderOne__card">
+            <div class="slide">
+                <div class="sliderOne__card-copy">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo nisi ut commodo blandit. Maecenas sit amet tempus odio</p>
+                </div>
+                <div class="sliderOne__card-media">
+                    <img src="http://via.placeholder.com/700x530?text=Image">
+                </div>
+            </div>
+            
+            <div class="slide">
+                <div class="sliderOne__card-copy">
+                    <p>Sed dictum velit eu velit lobortis, ac condimentum nulla tincidunt. Phasellus ornare sapien eros, egestas hendrerit mi faucibus finibus. Curabitur commodo justo eu felis tempus, vel feugiat massa porttitor. Fusce vel hendrerit orci. Mauris nisi sapien, vestibulum sed semper eget, ultricies iaculis velit.</p>
+                </div>
+                <div class="sliderOne__card-media">
+                        <iframe width="700" height="530" src="https://www.youtube.com/embed/yat4Ec-PRCo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    
+    <p>&nbsp;</p>
+
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
+<script src="../js/script.js"></script>
+
+
+
+
+</body>
+</html>

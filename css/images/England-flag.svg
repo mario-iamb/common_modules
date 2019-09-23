@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="15" viewBox="0 0 26 15">
+  <defs>
+    <rect id="england-flag-a" width="25.019" height="14.973" x=".276" y=".854"/>
+    <rect id="england-flag-c" width="25.019" height="14.973" x=".276" y=".854"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(.557 -.84)">
+    <mask id="england-flag-b" fill="#fff">
+      <use xlink:href="#england-flag-a"/>
+    </mask>
+    <use fill="#FFF" xlink:href="#england-flag-a"/>
+    <rect width="3" height="14.973" x="11.277" y=".854" fill="#CE1024" mask="url(#england-flag-b)"/>
+    <rect width="3" height="25.002" x="11.277" y="-4.162" fill="#CE1024" mask="url(#england-flag-b)" transform="rotate(90 12.777 8.339)"/>
+    <rect width="24.819" height="14.773" x=".376" y=".954" stroke="#E7E7E7" stroke-width=".2"/>
+  </g>
+</svg>

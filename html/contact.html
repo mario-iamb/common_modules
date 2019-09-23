@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Common Modules</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+
+<div class="wrapper__content">
+
+    <header class="header">
+        <div class="wrapper__inner">
+    
+            <a href="index.html" class="header__branding">
+                <img src="../css/images/thorogood_bw_logo.png" alt="Thorogood">
+            </a>
+    
+            <div class="primary-nav">
+    
+                <div class="primary-nav__mobile">
+                    <a href="#"><span></span></a>
+                </div>
+    
+                <nav class="primary-nav__list">
+                    <ul>
+                        <li class="menu-item-has-children">
+                            <a href="blog.html">About us</a>
+                            <ul>
+                                <li><a href="blog.html">History</a></li>
+                                <li><a href="#">Values</a></li>
+                                <li><a href="#">People</a></li>
+                                <li><a href="#">Responsible sourcing</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#">Services</a>
+                            <ul>
+                                <li><a href="#">Advanced Analytics</a></li>
+                                <li><a href="#">Defining</a></li>
+                                <li><a href="#">Delivering</a></li>
+                                <li><a href="#">Supporting</a></li>
+                                <li><a href="#">Planing &amp; Modeling</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#">Technology</a>
+                            <ul>
+                                <li><a href="#">Anaplan</a></li>
+                                <li><a href="#">Amazon Web Services</a></li>
+                                <li><a href="#">IBM</a></li>
+                                <li><a href="#">Microsoft</a></li>
+                                <li><a href="#">Qlik</a></li>
+                                <li><a href="#">SAP</a></li>
+                                <li><a href="#">Tableu</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Perspecives</a></li>
+                        <li><a href="#">Joins Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+    
+            </div>
+        </div>
+    </header>
+    
+    <section class="contact-form">
+        <div class="wrapper__inner">
+            
+            <form action="http://design-culture.co.uk" method="POST" id="contact-us">
+                <h2>Contact us</h2>
+    
+                <div class="field-block">
+                    <div class="field-sml">
+                        <label for="title">Title</label>
+                        <select id="title" class="input-field" name="title">
+                            <option selected value=''></option>
+                            <option value="Mr">Mr.</option>
+                            <option value="Mrs">Mrs.</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="field-block">
+                    <div class="field">
+                        <label for="fname">Name <span>*</span></label>
+                        <input id="name" name="fname" type="text" class="input-field required" value="">
+                        <label for="fname" class="error-message">Required field</label>
+                    </div>
+    
+                    <div class="field">
+                        <label for="email">Email <span>*</span></label>
+                        <input id="email" name="contact_email" type="text" class="input-field input-email required" value="">
+                        <label for="email" class="error-message">Required field</label>
+                    </div>
+    
+                    <div class="field">
+                        <label for="job">Job title</label>
+                        <input id="job" name="job_title" type="text" class="input-field" value="">
+                    </div>
+    
+                    <div class="field">
+                        <label for="company">Company</label>
+                        <input id="company" name="company" type="text" class="input-field" value="">
+                    </div>
+    
+                    <div class="field">
+                        <label for="phone">Phone number</label>
+                        <input id="phone" name="phone" type="tel" class="input-field" value="">
+                    </div>
+    
+                    <div class="field">
+                        <label for="post_code">Post code</label>
+                        <input id="post_code" name="post_code" type="text" class="input-field" value="">
+                    </div>
+    
+                    <div class="field-full">
+                        <label for="message">Message <span>*</span></label>
+                        <textarea class="input-message required" id="message" name="message" wrap="soft" placeholder="" aria-required="true"></textarea>
+                        <label for="message" class="error-message">Required field</label>
+                    </div>
+    
+                    <div class="field-full">
+                        <input type="submit" value="Submit" name="Submit" class="btn__submit">
+                    </div>
+                </div>
+            </form>
+            
+        </div>
+    </section>
+
+    <p>&nbsp;</p>
+
+    <section class="tags">
+        <div class="wrapper__inner">
+            <p class="tags__title">Links</p>
+            <ul>
+                <li><a id="button_one" href="#">One</a></li>
+                <li><a id="button_two" href="#">Two</a></li>
+                <li><a id="button_three" href="#">Three</a></li>
+                <li><a id="button_four" href="#">Four</a></li>
+                <li><a id="button_five" href="#">Five</a></li>
+            </ul>
+        </div>
+    </section>
+
+</div>
+
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+.pagination {
+    max-width: 747px;
+    margin: 100px auto 50px auto;
+    padding: 30px 0 0 0;
+    border-top: 1px solid #D8D8D8;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Museo100-Regular';
+
+    .prev {
+        width: 40%;
+
+        a {
+            &:before {
+                content:'PREVIOUS';
+                background:url('./images/left-pagination.svg') no-repeat;
+                background-position-y: 7px;
+                padding-left: 50px;
+                margin-bottom: 20px;
+                display: block;
+            }
+        }
+    }
+
+    .next {
+        width: 40%;
+        margin-left: auto;
+        text-align: right;
+
+        a {
+            &:before {
+                content:'NEXT';
+                background:url('./images/right-pagination.svg') no-repeat;
+                margin-bottom: 20px;
+                background-position: 100% 7px;
+                padding-right: 50px;
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.case-study {
+    width: 100%;
+    float: left;
+    margin: 50px 0;
+
+    .wrapper__inner {
+        height: 100%;
+    }
+
+    &__content {
+        max-width: 552px;
+        margin: 0 auto;
+        background: white;
+
+        @include screen(0, $media-tablet-small) {
+            width: 100%;
+            max-width: unset;
+        }
+    }
+}

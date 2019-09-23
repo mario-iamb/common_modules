@@ -1,0 +1,540 @@
+@font-face {
+	font-family: 'Museo500-Regular';
+	src: url('fonts/Museo500-Regular.eot');
+	src: local('☺'), url('fonts/Museo500-Regular.woff') format('woff'), url('fonts/Museo500-Regular.ttf') format('truetype'), url('fonts/Museo500-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Museo300-Regular';
+	src: url('fonts/Museo300-Regular.eot');
+	src: local('☺'), url('fonts/Museo300-Regular.woff') format('woff'), url('fonts/Museo300-Regular.ttf') format('truetype'), url('fonts/Museo300-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face { 
+	font-family: 'Museo100-Regular';
+	src: url('fonts/Museo100-Regular.eot');
+	src: local('☺'), url('fonts/Museo100-Regular.woff') format('woff'), url('fonts/Museo100-Regular.ttf') format('truetype'), url('fonts/Museo100-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'gt-walsheim-light';
+    src: url('fonts-2/gt-walsheim-light.eot');
+    src: url('fonts-2/gt-walsheim-light.eot?#iefix') format('embedded-opentype'),
+      url('fonts-2/gt-walsheim-light.woff2') format('woff2'),
+      url('fonts-2/gt-walsheim-light.woff') format('woff'),
+      url('fonts-2/gt-walsheim-light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'gt-walsheim-regular';
+    src: url('fonts-2/gt-walsheim-regular.eot');
+    src: url('fonts-2/gt-walsheim-regular.eot?#iefix') format('embedded-opentype'),
+      url('fonts-2/gt-walsheim-regular.woff2') format('woff2'),
+      url('fonts-2/gt-walsheim-regular.woff') format('woff'),
+      url('fonts-2/gt-walsheim-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'gt-walsheim-medium';
+    src: url('fonts-2/gt-walsheim-medium.eot');
+    src: url('fonts-2/gt-walsheim-medium.eot?#iefix') format('embedded-opentype'),
+      url('fonts-2/gt-walsheim-medium.woff2') format('woff2'),
+      url('fonts-2/gt-walsheim-medium.woff') format('woff'),
+      url('fonts-2/gt-walsheim-medium.ttf') format('truetype');
+}
+
+
+$alt-font-family: "Trebuchet MS", 'Helvetica', Arial, sans-serif;
+
+
+/*  ---------------------------------------- Fonts ---------------------------------------- */
+@mixin main-heavy {
+    font-family: 'Museo500-Regular', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+}
+
+@mixin main-regular {
+    font-family: 'Museo300-Regular', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+@mixin main-light {
+    font-family: 'Museo100-Regular', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+}
+
+
+@mixin alt-light {
+    font-family: $alt-font-family;
+}
+
+
+/*  ---------------------------------------- Lincoln's Inn Fonts ---------------------------------------- */
+@mixin lincolns-light {
+    font-family: 'gt-walsheim-light', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+
+@mixin lincolns-regular {
+    font-family: 'gt-walsheim-regular', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+
+@mixin lincolns-medium {
+    font-family: 'gt-walsheim-medium', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+
+@mixin lincolns-alt {
+    font-family: 'Garamond', serif;
+    font-weight: 500;
+}
+
+
+/*  ---------------------------------------- Sizes ---------------------------------------- */
+
+@mixin t-10-11 {
+    font-size: 10px;
+    line-height: 11px;
+}
+
+@mixin t-10-12 {
+    font-size: 10px;
+    line-height: 12px;
+}
+
+@mixin t-12-12 {
+    font-size: 12px;
+    line-height: 12px;
+}
+
+@mixin t-12-14 {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+
+@mixin t-12-19 {
+    font-size: 12px;
+    line-height: 19px;
+}
+
+@mixin t-14-15 {
+    font-size: 14px;
+    line-height: 15px;
+}
+
+@mixin t-14-17 {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+@mixin t-14-18 {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+@mixin t-14-20 {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+@mixin t-14-24 {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+@mixin t-15-18 {
+    font-size: 15px;
+    line-height: 18px;
+}
+
+@mixin t-15-25 {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+@mixin t-16-20 {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+@mixin t-16-55 {
+    font-size: 16px;
+    line-height: 55px;
+}
+
+@mixin t-16-19 {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+@mixin t-16-16 {
+    font-size: 16px;
+    line-height: 16px;
+}
+
+@mixin t-16-26 {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+@mixin t-18-24 {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+@mixin t-20-30 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+
+@mixin t-23-28 {
+    font-size: 23px;
+    line-height: 28px;
+}
+
+@mixin t-30-34 {
+    font-size: 30px;
+    line-height: 34px;
+}
+
+@mixin t-30-40 {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+@mixin t-32-36 {
+    font-size: 32px;
+    line-height: 36px;
+}
+
+@mixin t-40-42 {
+    font-size: 40px;
+    line-height: 42px;
+}
+
+@mixin t-40-44 {
+    font-size: 40px;
+    line-height: 44px;
+}
+
+
+
+
+
+
+/*  ---------------------------------------- Typography ---------------------------------------- */
+
+h2 {
+    @include main-regular;
+    @include t-30-40;  
+    color: $HeroChartreuse;  
+}
+
+h3 {
+    @include main-regular;
+    @include t-23-28;
+    color: $DarkTurquoiseGreen;
+}
+
+h4 {
+    @include main-regular;
+    @include t-18-24;
+    color: $DarkTurquoiseGreen;
+}
+
+p {
+    //@include main-light;
+    font-family: 'Gotham',sans-serif;
+    font-weight: 100;
+    @include t-16-26;
+    color: $NeutralGrey-5;
+}
+
+
+@mixin header-15-18 {
+    @include main-regular;
+    @include t-15-18;
+
+    @include screen(0, $media-tablet){
+        @include main-heavy;
+        @include t-16-55;
+    }
+}
+
+@mixin header-secondary-15-25 {
+    @include main-regular;
+    @include t-15-25;
+
+    @include screen(0, $media-tablet){
+        @include main-regular;
+        @include t-16-55;
+    }
+}
+
+
+@mixin help-title-23-28 {
+    @include main-regular;
+    @include t-23-28;
+}
+
+
+
+@mixin content-generic-title {
+    @include main-regular;
+    @include t-23-28;
+}
+
+
+@mixin breadcrumb-list {
+    @include main-regular;
+    @include t-12-12;
+
+    @include screen(0, $media-mobile-large){
+        @include t-10-12;
+    }
+}
+
+@mixin breadcrumb-list-heavy {
+    @include main-heavy;
+    @include t-14-20;
+}
+
+@mixin aside-nav-title {
+    @include main-heavy;
+    @include t-16-19;
+
+    @include screen(0, $media-mobile-large){
+        @include main-regular;
+    }
+}
+
+//aside nav
+@mixin aside-nav-14-20 {
+    @include main-regular;
+    @include t-14-20;
+
+    @include screen(0, $media-mobile-large){
+        @include t-16-16;
+    }
+
+}
+
+//aside nav active
+@mixin aside-nav-active-14-20 {
+    @include main-heavy;
+    @include t-14-20;
+
+    @include screen(0, $media-mobile-large){
+        @include t-16-16;
+    }
+}
+
+@mixin generic-list-16-26 {
+    @include main-light;
+    @include t-16-26;
+}
+
+@mixin number-list-16-26 {
+    @include main-heavy;
+    @include t-16-26;
+}
+
+@mixin generic-title-30-40 {
+    @include main-regular;
+    @include t-30-40; 
+}
+
+@mixin img-caption {
+    @include main-heavy;
+    @include t-14-17;
+}
+
+@mixin btn-large-type {
+    @include main-heavy;
+    @include t-14-17;
+}
+
+@mixin generic-23-28 {
+    @include main-regular;
+    @include t-23-28;
+}
+
+@mixin generic-18-24 {
+    @include main-regular;
+    @include t-18-24;
+}
+
+@mixin generic-help-18-26 {
+    @include main-regular;
+    @include t-18-24;
+}
+
+@mixin generic-help-16-26 {
+    @include main-light;
+    @include t-16-26;
+}
+
+
+//quotes
+@mixin quotes-18-24 {
+    @include main-heavy;
+    @include t-18-24;
+}
+
+
+
+@mixin footer-12-14 {
+    @include alt-light;
+    @include t-12-14;
+
+    @include screen(0, $media-mobile-large) {
+        @include t-10-11;
+    }
+}
+
+
+
+@mixin page-title-30-40 {
+    @include main-regular;
+    @include t-30-40;
+
+    @include screen(0, $media-mobile-large) {
+        @include t-23-28;
+    }
+}
+
+
+//hero large h1
+@mixin hero-large-40-44 {
+    @include main-regular;
+    @include t-40-44;
+
+    @include screen(0, $media-mobile-large){
+        @include t-30-40;
+    }
+}
+
+//hero large p
+@mixin hero-large-p-30-34 {
+    @include main-regular;
+    @include t-30-34;
+
+    @include screen(0, $media-mobile-large){
+        @include main-heavy;
+        @include t-18-24;
+    }
+}
+
+
+//hero small h1
+@mixin hero-small-40-42 {
+    @include main-regular;
+    @include t-40-42;
+
+    @include screen(0, $media-mobile-large){
+        @include t-30-40;
+    }
+}
+
+//hero small p
+@mixin hero-small-p-40-42 {
+    @include main-regular;
+    @include t-40-42;
+
+    @include screen(0, $media-mobile-large){
+        @include t-30-40;
+    }
+}
+
+@mixin office-loc-23-28 {
+	@include main-regular;
+	@include t-23-28;
+}
+
+@mixin office-tel-16-26 {
+	@include main-heavy;
+	@include t-16-26;
+}
+
+@mixin office-map-14-15 {
+	@include main-heavy;
+	@include t-14-15;
+}
+
+@mixin corporate-info-12-19 {
+	@include alt-light;
+	@include t-12-19;
+}
+
+
+@mixin tags-12-14 {
+    @include alt-light;
+	@include t-12-14;
+}
+
+
+@mixin tags-title-16-26 {
+    @include main-heavy;
+	@include t-16-26;
+}
+
+@mixin downloads-12-14 {
+    @include main-regular;
+	@include t-12-14;
+}
+
+@mixin find-out-14-17 {
+    @include main-regular;
+	@include t-14-17;
+}
+
+@mixin share-title-16-26 {
+    @include main-heavy;
+	@include t-16-26;
+}
+
+@mixin header-active-15-18 {
+    @include main-heavy;
+    @include t-15-18;
+}
+
+@mixin select-12-12 {
+    @include main-regular;
+    @include t-12-12;
+}
+
+@mixin form-label-14-15 {
+    @include main-heavy;
+    @include t-14-15;
+}
+
+@mixin error-label-12-19 {
+    @include main-heavy;
+    @include t-12-19;
+}
+
+@mixin input-16-16 {
+    @include main-regular;
+    @include t-16-16;
+}
+
+@mixin textarea-16-26 {
+    @include main-regular;
+    @include t-16-26;
+}
+
+@mixin btn-sumbit-14-15 {
+    @include main-regular;
+    @include t-14-15;
+}

@@ -1,0 +1,114 @@
+.carousel {
+    width: 100%;
+    float: left;
+    
+    &__card {
+        lost-column: 1/1;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        &:nth-child(2n) {
+            .carousel__card-media {
+                order: 2;
+
+                @include screen(0, $media-mobile-large) {
+                    order:1;
+                }
+            }
+            .carousel__card-copy {
+                order: 1;
+
+                @include screen(0, $media-mobile-large) {
+                    order:2;
+                }
+            }
+        }
+
+        &-copy {
+            lost-column:1/2 0 0px no-flex;
+            background:#E8E8E8;
+            order: 2;
+            display: flex;
+            align-items: center;
+            
+            @include screen(0, $media-mobile-large) {
+                lost-column:1/1;
+            }
+
+            .copy-holder {
+                max-width:454px;
+                padding-left: 15%;
+
+                @include screen(0, $media-mobile-large) {
+                    padding: 0;
+                }
+            }
+        }
+
+        &-media {
+            lost-column:1/2 0 0px no-flex;
+            background: lightgray;
+            position: relative;
+            order: 1;
+
+            @include screen(0, $media-mobile-large) {
+                lost-column:1/1;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            .slick-dots {
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+
+                li {
+                    display: inline-block;
+                    padding: 0 5px;
+                }
+            }
+        }
+    }
+}
+
+.sliderOne {
+    width: 100%;
+    float: left;
+
+    &__card {
+        lost-column: 1/1;
+        position: relative;
+
+        .slick-slide {
+            display: flex!important;
+            flex-wrap: wrap;
+        }
+
+        &-copy {
+            lost-column:1/2 0 0px no-flex; 
+            background:#E8E8E8;
+        }
+
+        &-media {
+            lost-column:1/2 0 0px no-flex; 
+        }
+
+        .slick-dots {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform:translateX(-50%);
+
+            li {
+                display: inline-block;
+                padding: 0 5px;
+            }
+
+        }
+    }
+}

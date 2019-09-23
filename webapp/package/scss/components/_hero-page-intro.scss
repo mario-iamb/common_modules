@@ -1,0 +1,61 @@
+.page-intro {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 50px 0;
+
+    @include screen(0, $media-mobile-large){
+        padding: 30px 0;
+    }
+
+    .wrapper__inner {
+        max-width: 800px;
+    }
+
+    p {
+        @include page-title-30-40;
+        color: $Grey;
+    }
+
+    a {
+        color: $HeroChartreuse;
+    }
+}
+
+.tags {
+    width: 100%;
+    float: left;
+    margin: 0 0 25px 0;
+
+    &__title {
+        @include tags-title-16-26;
+        color: $NeutralGrey-1;
+        padding-bottom:10px;
+    }
+
+    ul {
+        > li {
+            display: inline-block;
+            border: 1px solid rgba($color: #979797, $alpha: 0.3);
+            margin: 0 10px 10px 0;
+            border-radius: 5px;
+            transition: all 0.3s ease-out;
+
+            &:hover {
+                border-color: $HeroChartreuse;
+                background-color: $HeroChartreuse;
+
+                a {
+                    color: White;
+                }
+            }
+
+            a {
+                color: $Grey; 
+                padding: 6px 10px;
+                @include tags-12-14;
+                float: left;
+            }
+        }
+    }
+}

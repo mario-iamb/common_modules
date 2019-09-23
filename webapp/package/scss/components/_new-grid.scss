@@ -1,0 +1,273 @@
+$color--white : #FFFFFF;
+$color--black : #000000;
+$color--primary : #2AA1C0;
+
+* {
+	box-sizing: border-box;
+}
+
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+
+    > .col, > [class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+
+.container-fluid {
+    max-width: 1140px;
+    padding: 0;
+    // border: 1px dotted blue;
+    // box-sizing: border-box;
+}
+
+
+
+.visits, .tours {
+    width: 100%;
+    float: left;
+    margin: 0 0 50px 0;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+    
+    .label {
+        width: auto;
+        font-family: 'GAramond' ,sans-serif;
+        font-size: 22px;
+        line-height: 27px;
+        margin-right: 40px;
+        cursor: pointer;
+        color: #808080;
+        position: relative;
+
+        &:not(:last-of-type):after {
+            content:'';
+            position: absolute;
+            width: 1px;
+            height: 27px;
+            background: #979797;
+            top: 0;
+            right: -20px;
+        }
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+
+    .input {
+        position: absolute;
+        opacity: 0;
+    
+        &:focus {
+            + .label {
+                z-index: 1;
+            }
+        }
+        
+        &:checked {
+            + .label {
+                background: #fff;
+                color: #0F6CB5;  
+                border-bottom: 1px solid #0F6CB5;
+    
+                + .panel {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .panel {
+        display: none;
+        padding: 20px 0 0 0;
+        background: #fff;
+        order: 99;
+
+        p {
+            font-family: 'GT Walsheim' ,sans-serif;
+            font-size: 14px;
+            line-height: 24px;
+            padding: 0 0 10px 0;
+        }
+    }
+}
+
+
+
+.contact-details {
+    width: 100%;
+    float: left;
+    margin: 50px 0 100px 0;
+    background-color: #F9F9F9;
+}
+
+
+
+
+
+.space-layouts {
+    border: 1px dotted lightblue;
+    margin-bottom: 100px;
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    &__info {
+        background: #F2F2F2;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 100px;
+        padding-top: 50px;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__nav-subtitle {
+        @include lincolns-regular;
+        @include t-16-20;
+        color: #771B4A;
+        width: 255px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__nav-title {
+        @include lincolns-alt;
+        @include t-32-36;
+        color: #292929;
+        width: 255px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+
+    &__nav-list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    &__nav-item {
+        border-bottom: 1px solid #D8D8D8;
+        display: flex;
+        justify-content: center;
+        //padding: 13px 0;
+
+        &:not(:first-child).active {
+            background: #771B4A;
+            > a,
+            > a:hover,
+            > a:focus {
+                color: #FFFFFF;
+                cursor: default;
+                background: #771B4A;
+            }
+        }
+
+        &:first-child {
+            a {
+                @include t-16-26;
+                color: #771B4A;
+            }
+        }
+    }
+
+    &__nav-link {
+        @include lincolns-regular;
+        @include t-14-17;
+        color: #292929;
+        padding: 13px 0;
+        text-decoration: none;
+        width: 255px;
+        &:hover {
+            text-decoration: none;
+            color: #292929;
+        }
+    }
+
+    &__content {
+        display: flex;
+        min-height: 697px;
+        margin: auto;
+
+        .tab-pane {
+            display: none;
+            margin: auto;
+
+    
+            &.active {
+                display: block;
+            }
+        }
+    }
+}
+
+.table {
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+
+    &__title {
+        @include t-16-26;
+        @include lincolns-regular;
+        color: #771B4A; 
+    }
+
+    &__row {
+        border-top: 1px solid #D8D8D8;
+        border-bottom: 1px solid #D8D8D8;
+    }
+
+    &__cell {
+        @include t-14-18;
+        @include lincolns-light;
+        color: #292929;
+        padding: 10px 0;
+    }
+
+    &--dimensions {
+        width: 255px;
+        margin-top: auto;
+        align-self: center;
+        //margin-bottom: 100px;
+    }
+
+    &--capacity {
+        max-width: 650px;
+        //border: 1px dotted red; 
+    }
+}
+
+
+.my-test {
+    margin-bottom: 50px;
+    width: 100%;
+
+    .tns-item img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+

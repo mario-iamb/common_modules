@@ -1,0 +1,69 @@
+.post {
+    width: 100%;
+    float: left;
+    margin: 50px 0;
+
+    .wrapper__inner {
+        //height: 100%;
+        //background: #ecf3f5;
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    &__content {
+        max-width: 552px;
+        //lost-offset: 2/12;
+        //margin-right: 130px;
+        //margin: 0 auto;
+        background: white;
+
+        @include screen(0, $media-tablet-small) {
+            width: 100%;
+            max-width: unset;
+        }
+    }
+
+    aside {
+        //align-self: flex-end;
+        //margin-left: auto;
+        //lost-column:3/12;
+        width: 200px;
+        font-family: 'Museo100-Regular';
+        border: 1px dotted blue;
+        //background: lightgray;
+
+        .aside__ingredients {
+            margin-bottom: 50px;
+            background: #F1F1F1;
+
+            h3 {
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            li {
+                padding: 10px 5px;
+            }
+        }
+
+        .aside__latest {
+            
+
+            h3 {
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            li {
+                padding: 10px 0;
+                border-bottom: 1px solid lightgray;
+                
+            }
+        }
+    }
+
+
+
+
+}

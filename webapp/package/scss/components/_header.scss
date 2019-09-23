@@ -1,0 +1,545 @@
+.newheader {
+    width: 100%;
+    float: left;
+    height: 126px;
+    border-bottom: 1px solid #D8D8D8;
+
+    @include screen(0, $media-mobile-large) {
+        height: 60px;
+    }
+
+    .wrapper__inner {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        position: relative;        
+    }
+
+    &__branding {
+        
+        @include screen(0, $media-mobile-large) {   
+            width: 127px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__mobile {
+        display: none;
+        width: 42px;
+        height: 42px;
+        cursor: pointer;
+        position: absolute;
+        top: 25px;
+        right: 0;
+
+        @include screen(0, $media-mobile-large){
+            display: block;
+            top: 9px;
+            right: -15px;
+        }
+
+        &.active {
+            display: block;
+            
+            a {
+                &::before {
+                    top: 20px;
+                    transform: rotate(45deg);
+                    left: 25%;
+                }
+
+                span {
+                    opacity: 0;
+                }
+
+                &::after {
+                    top: 20px;
+                    transform: rotate(-45deg);
+                    left: 25%;
+                }
+            }
+        }
+
+        a {
+            overflow: hidden;
+
+            span, &::before, &::after {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 1px;
+                background-color: #656565;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: all .2s ease-out;
+
+            }
+            &::before {
+                top: 14px;
+            }
+            
+            span {
+                top: 20px;
+            }
+            
+            &::after {
+                top: 26px;
+            }
+        }
+    }
+
+    .region-nav {
+        //border: 1px dotted blue;
+        position: absolute;
+        right: 320px;
+        top: 5px;
+
+        @include screen(0, $media-mobile-large) {
+            right: 100px;
+        }
+    }
+
+    
+
+    .primary-nav {
+        align-self: flex-end;
+        margin-left: auto;
+
+        @include screen(0, $media-mobile-large){
+            display: none;
+            position: relative;
+            align-self: normal;
+
+            &.active {
+                display: block;
+            }
+        }
+
+        .language-nav {
+            margin-right: 30px;
+    
+            ul {
+                padding: 5px 0 0 0;
+
+                li {
+                    display: inline-block;
+                    padding: 0 5px;
+    
+                    &.active {
+                        a {
+                            text-decoration: underline;
+                            color: black;
+                        }       
+                    }
+    
+                    a {
+                        font-family: 'Gotham',sans-serif;
+                        font-weight: 100;
+                        text-decoration: none;
+                        font-size: 11px;
+                        color: rgba(15, 14, 14, 0.4)
+                    }
+                }
+            }
+        }
+    
+        .join-family {
+            background: #F8D344;
+            color: white;
+            font-family: 'Gotham',sans-serif;
+            font-weight: 100;
+            font-size: 11px;
+            padding: 10px 20px;
+            text-transform: uppercase;
+        }
+
+
+
+        
+
+        &__selection {
+            display: flex;
+            flex-wrap: wrap;
+            flex-flow: row;
+            justify-content: flex-end;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            margin: 45px 0 30px 0;
+
+            @include screen(0, $media-mobile-large) {
+                width: 100%;
+                height: 100%;
+                margin:0;
+                position: fixed;
+                margin-top: 60px;
+                left: 0;
+                z-index: 999;
+                background:$White;
+                float: none;
+                clear: both;
+                overflow-y: auto;
+            }
+
+            ul.menu-primary {
+                order: 2;
+                //margin-top: 25px;
+
+                @include screen(0, $media-mobile-large){
+                    order: 1;
+                    width: 100%;
+                    float: left;
+                }
+
+                > li {
+                    float: left;
+                    padding: 0 0 0 30px;
+
+                    @include screen(0, $media-mobile-large){
+                        width: 100%;
+                        padding: 10px 0;
+                    }
+
+                    &:hover > a:after {
+                        transform:scaleX(1);
+                    }
+
+                    a {
+                        font-family: "Gotham",sans-serif;
+                        //text-transform: uppercase;
+                        letter-spacing: 1px;
+                        font-size: 16px;
+                        color: #656565;
+                        font-weight: 100;
+
+                        &:after {
+                            display: block;
+                            content:'';
+                            border-bottom: 1px solid #000000;
+                            transform: scaleX(0);
+                            transition: transform 0.2s ease-in-out;
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+
+}
+
+.header {
+    width: 100%;
+    float: left;
+    height: 90px;
+    border-bottom: 1px solid $LightGrey;
+
+    @include screen(0, $media-mobile-large) {
+        height: 42px;
+    }
+
+    &__branding {
+        float: left;
+        margin: 30px 0;
+
+        @include screen(0, $media-mobile-large) {
+            width: 164px;
+            margin: 12px 0 8px 0;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .primary-nav {
+        float: right;
+
+        @include screen(0, $media-tablet){
+            position: relative;
+        }
+
+        &__mobile {
+            display: none;
+            width: 42px;
+            height: 42px;
+            cursor: pointer;
+            position: absolute;
+            top: 25px;
+            right: 0;
+
+            @include screen(0, $media-tablet) {
+                display: block;
+            }
+
+            @include screen(0, $media-mobile-large){
+                top: 0;
+                right: -15px;
+            }
+
+            &.active {
+                display: block;
+                
+                a {
+                    &::before {
+                        top: 20px;
+                        transform: rotate(45deg);
+                        left: 25%;
+                    }
+
+                    span {
+                        opacity: 0;
+                    }
+
+                    &::after {
+                        top: 20px;
+                        transform: rotate(-45deg);
+                        left: 25%;
+                    }
+                }
+            }
+
+            a {
+                overflow: hidden;
+
+                span, &::before, &::after {
+                    content: '';
+                    position: absolute;
+                    width: 20px;
+                    height: 2px;
+                    background-color: $HeroChartreuse;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    transition: all .2s ease-out;
+
+                }
+                &::before {
+                    top: 14px;
+                }
+                
+                span {
+                    top: 20px;
+                }
+                
+                &::after {
+                    top: 26px;
+                }
+            }
+        }
+
+        &__list {
+            float: right;
+
+            @include screen(0, $media-tablet) {
+                display: none;
+                width: 100%;
+                height: 100%;
+                margin:0;
+                position: fixed;
+                margin-top: 91px;
+                left: 0;
+                z-index: 999;
+                background:$White;
+                float: none;
+                clear: both;
+                overflow-y: auto;
+
+                &.active {
+                    display: block;
+                }
+            }
+
+            @include screen(0, $media-mobile-large){
+                margin-top: 43px;
+            }
+
+            //FIRST level
+            > ul {
+                width: 100%;
+                float: left;
+                margin: 20px 0 0 0;
+                padding: 0;
+
+                @include screen(0, $media-tablet){
+                    margin: 0;
+                    box-sizing: border-box;
+                }
+
+                > li {
+                    float: left;
+                    display: block;
+                    padding: 15px 20px 35px 20px;
+                    position: relative;
+
+                    &.current-menu-item, &.current-page-ancestor {
+                        
+                        @include min-screen($media-tablet){
+                            > a {
+                                @include header-active-15-18;
+                                color: $HeroChartreuse;
+                                padding-bottom: 36px;
+                                border-bottom: 3px solid $HeroChartreuse;
+                            }
+                        }
+                    }
+
+                    &.menu-item-has-children {
+                        @include screen(0, $media-tablet){
+                            > a {
+                                background:url(images/arrow-right-side.svg) no-repeat;
+                                background-position: 100% 50%;
+                            }
+                        }
+
+                        @include min-screen($media-tablet){
+                            &:hover {
+                                ul {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+
+                    &.off {
+                        display: none;
+                    }
+
+                    &:last-child {
+                        padding: 15px 0 35px 20px;
+                    }   
+
+                    &:hover > a {
+                        color: $HeroChartreuse;
+                        padding-bottom: 35px;
+                        border-bottom: 3px solid $HeroChartreuse;
+                    }
+
+                
+                    > a {
+                        @include header-15-18;
+                        color: $Grey;
+                        position: relative;
+
+                        @include screen(0, $media-tablet){
+                            color: $HeroChartreuse;
+                            display: block;
+                            border-bottom: 1px solid  rgba(106, 199, 56, 0.2);
+                            margin: 0 15px;
+                        }
+
+                        &.back-btn {
+                            display: block;
+                            color: $White;
+                            background-color: $HeroChartreuse;
+                            margin: 0;
+
+
+                            &:before {
+                                content:'';
+                                background: transparent url('images/arrow-back.svg') no-repeat;
+                                display: inline-block;
+                                width: 8px;
+                                height: 14px;
+                                margin: 0 10px 0 15px;
+                            }
+
+                            &.off {
+                                display: none;
+                            }
+                        }
+                    }
+                    
+
+                    @include screen(0, $media-tablet) {
+                       width: 100%;
+                       display: block;
+                       padding: 0;
+                       
+
+                        &:last-child {
+                            padding: 0;
+                        }
+
+                       &:hover > a {
+                           padding: 0;
+                           border-bottom: 1px solid  rgba(106, 199, 56, 0.2);
+                       }
+                    }
+
+                    //SECOND level
+                    & > ul {
+                        display: none;
+                        width: 230px;
+                        position: absolute;
+                        left: 0;
+                        margin:38px 0 0 -14px;
+                        padding: 30px 0 30px 35px;
+                        background-color: $HeroChartreuse;
+                        z-index: 999;
+                        box-sizing: border-box;
+
+                        &.active {
+                            display: block;
+                        }
+
+                        @include screen(0, $media-tablet){
+                            width: 100%;
+                            box-sizing: border-box;
+                            margin: 0;
+                            position: relative;
+                            float: left;
+                            padding: 0 15px;
+                            background-color: $White;
+                        }
+
+                        & > li {
+                            list-style-type: none;
+                            width: 100%;
+                            float: left;
+
+                            &.current-menu-item {
+                                > a {
+                                    @include main-heavy;
+                                    text-decoration: underline;
+                                }
+                            }
+
+                            > a {
+                                @include header-secondary-15-25;
+                                width: 100%;
+                                float: left;
+                                color: $White;
+                                padding: 0 0 4px 0;
+
+                                @include screen(0, $media-tablet){
+                                    color: $HeroChartreuse;
+                                    display: block;
+                                    background:url(images/arrow-right-side.svg) no-repeat;  
+                                    background-position: 100% 50%;
+                                    border-bottom: 1px solid  rgba(106, 199, 56, 0.2);
+                                    padding: 0;
+                                }
+                                
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        
+    }
+}

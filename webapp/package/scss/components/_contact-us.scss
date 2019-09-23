@@ -1,0 +1,62 @@
+
+.offices {
+    width: 100%;
+    float: left;
+    margin: 0 0 50px 0;
+    
+
+    .wrapper__inner {
+        border-top:1px solid $LightGrey;
+        lost-center: 1128px; 
+        padding: 50px 0 0 100px;
+        
+    }
+
+    &__location {
+        lost-column:1/3 3 50px;
+        margin-bottom: 70px;
+        box-sizing: border-box;
+        //border: 1px solid green;
+        
+        h2 {
+            @include office-loc-23-28;
+            color: $HeroChartreuse;
+            padding: 0 0 10px 0;
+        }
+
+        p {
+            padding-bottom: 10px;
+
+            &.office-tel {
+                a {
+                    @include office-tel-16-26;
+                    color: $Cyan;
+                    display: block;
+                }
+            }
+
+            &.office-info {
+                @include corporate-info-12-19;
+                color: $Grey;
+            }
+        }
+
+        .office-map {
+            @include office-map-14-15;
+            color: $Grey;
+            position: relative;
+            padding-left: 20px;
+            display: block;
+            margin: 10px 0 20px 0;
+            
+            &:before {
+                content:url('images/office-location.svg');
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        
+    }
+}
